@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp-Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <div class="part1"><img class="tree" src="./Images/halie-west-bTzpau9mKT4-unsplash.jpg" alt="Trees">
+    <div class="textcontainer">
+        <img src="./Images/odin-lined.png" alt="odinbhau" class="odin">
+        <div class="logotext">Odin Bhau</div>
+    </div>
+    <div class="imagecredit">Photo by <a href="https://unsplash.com/@haliewestphoto"> Halie West</a> on <a href="https://unsplash.com/photos/bTzpau9mKT4">Unsplash</a></div>
+    </div>
+    <div class="part2">
+        <div class="intro">
+            <div class="intro1">This is not real online service! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum laudantium alias sapiente a amet maxime dolorem nobis animi quibusdam earum ex molestiae cumque repellat, delectus tenetur sit sequi similique. Dolor?</div>
+            <div class="intro2">You know you want to!!</div>
+        </div>
+        <div class="table">
+            <form action="#" method="get" onsubmit="return checkpass(this)">
+                <div class="thead">Let's do this!</div>
+                <div class="user-details">
+                <div class="fname">
+                    <div><label for="first_name">FIRST NAME</label></div>
+                    <div><input type="text" id="first_name" name="first_name" placeholder="Tom" required></div>
+                </div>
+                <div class="lname">
+                    <div><label for="last_name">LAST NAME</label></div>
+                    <div><input type="text" name="last_name" id="last_name" placeholder="David" required></div>
+                </div>
+                <div class="mail">
+                    <div><label for="email">EMAIL</label></div>
+                    <div><input type="email" name="email" id="email" placeholder="tom@david.com" required></div>
+                </div>
+                <div class="pnum">
+                    <div><label for="phone_number">PHONE NUMBER</label></div>
+                    <div><input type="number" name="phone_number" id="phone_number"></div>                 
+                </div>
+                <div class="pass">
+                    <div><label for="password">PASSWORD</label></div>
+                    <div><input type="password" name="password" id="password" required></div>                 
+                </div>
+                <div class="cpass">
+                    <div><label for="confirm_pass">CONFIRM PASSWORD</label></div>
+                    <div><input type="password" name="confirm_password" id="confirm_password" required></div>                 
+                </div>
+                <div class="passmatch"></div>
+                </div>
+                <div class="footer">
+                    <button class="sub" name="submit" type="submit">Create Account</button>
+                    <div class="account">Already have an Account? <a id="footerlink" href="#">Log in</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

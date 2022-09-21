@@ -1,0 +1,135 @@
+:root {
+    --img-credit-color: rgb(232, 216, 216);
+    --intro-bg-color: rgba(249,250,251,255);
+}
+* {
+    font-family: helvetica,sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    position: relative;
+    display: flex;
+    width: 1338px;
+    height: 1000px;
+}
+.part1 {
+    display: flex;
+    width: 50%;
+}
+img.tree {
+    height: 100%;
+    position: absolute;
+}
+.textcontainer {
+    display: flex;
+    width: 668px;
+    height: 20%;
+    background-color: rgba(19, 12, 12, 0.4);
+    position: absolute;
+    top: 300px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+img.odin {
+    width: 17%;
+}
+.logotext {
+    display: flex;
+    color: white;
+    font-family: Norse;
+    font-size: 46px;
+}
+.imagecredit {
+    position: absolute;
+    color: var(--img-credit-color);
+    bottom: 10px;
+    left: 200px;
+}
+a:link {
+    color: var(--img-credit-color);
+}
+a:visited {
+    color: var(--img-credit-color);
+}
+.part2 {
+    width: 50%;   
+}
+.intro {
+display: flex;
+flex-direction: column;
+padding-top: 30px;
+padding-left: 30px;
+padding-bottom: 20px;
+gap: 30px;
+background-color: var(--intro-bg-color);
+font-weight: bold;
+font-size: 20px;
+}
+.user-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    box-shadow: 0px 5px 5px #888888;
+    padding-left: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.thead {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+input {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+}
+button {
+    background-color: #596D48;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: #596D48;
+    box-shadow: 5px 5px 4px #888888; 
+    margin-top: 30px;
+    cursor: pointer;
+}
+.fname, .lname, .mail, .pnum, .pass, .cpass {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pass, .cpass {
+    padding-bottom: 5px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--intro-bg-color);
+    height: 430px;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+#footerlink {
+color: #596D48;
+}
+.passmatch {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    color: red;
+}
+
+    
+    
