@@ -2,35 +2,38 @@
     --img-credit-color: rgb(232, 216, 216);
     --intro-bg-color: rgba(249,250,251,255);
 }
+@font-face {
+    font-family: "Norse";
+    src: url(./Norse-Bold.otf);
+}
 * {
     font-family: helvetica,sans-serif;
     margin: 0px;
-    padding: 0px;
+    padding: 0px;    
 }
 .container {
-    position: relative;
     display: flex;
-    width: 1338px;
-    height: 1000px;
+    min-height: 100vh; 
+    min-width: 100vw;
 }
 .part1 {
-    display: flex;
-    width: 50%;
+    position: relative;
+    width: 40%;
 }
-img.tree {
+.picture {
     height: 100%;
-    position: absolute;
+    background-image: url(./Images/halie-west-bTzpau9mKT4-unsplash.jpg);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
 .textcontainer {
+    margin-top: 15vh;
     display: flex;
-    width: 668px;
-    height: 20%;
-    background-color: rgba(19, 12, 12, 0.4);
-    position: absolute;
-    top: 300px;
+    background-color: rgba(19, 12, 12, 0.4); 
     align-items: center;
     justify-content: center;
-    gap: 5px;
 }
 img.odin {
     width: 17%;
@@ -38,14 +41,16 @@ img.odin {
 .logotext {
     display: flex;
     color: white;
-    font-family: Norse;
+    font-family: "Norse";
     font-size: 46px;
 }
 .imagecredit {
-    position: absolute;
+    display: flex;
+    justify-content: center;
     color: var(--img-credit-color);
-    bottom: 10px;
-    left: 200px;
+    margin-bottom: 10px;
+    top: 1010px;
+    left: 232px;
 }
 a:link {
     color: var(--img-credit-color);
@@ -54,12 +59,15 @@ a:visited {
     color: var(--img-credit-color);
 }
 .part2 {
-    width: 50%;   
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 .intro {
 display: flex;
-flex-direction: column;
+flex: 1;
 padding-top: 30px;
+flex-direction: column;
 padding-left: 30px;
 padding-bottom: 20px;
 gap: 30px;
@@ -67,10 +75,14 @@ background-color: var(--intro-bg-color);
 font-weight: bold;
 font-size: 20px;
 }
+.table {
+    display: flex;
+    
+}
 .user-details {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px 100px;
     box-shadow: 0px 5px 5px #888888;
     padding-left: 30px;
 }
@@ -89,6 +101,7 @@ input {
     width: 250px;
     height: 20px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 button {
     background-color: #596D48;
@@ -106,7 +119,6 @@ button {
 .fname, .lname, .mail, .pnum, .pass, .cpass {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 .pass, .cpass {
     padding-bottom: 5px;
@@ -116,8 +128,9 @@ button {
     flex-direction: column;
     gap: 40px;
     background-color: var(--intro-bg-color);
-    height: 430px;
+    height: 100%;
     margin-top: 40px;
+    margin-bottom: 10px;
     padding-left: 30px;
 }
 #footerlink {
